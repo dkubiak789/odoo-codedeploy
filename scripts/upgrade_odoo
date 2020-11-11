@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ~/odoo || exit
 bin/supervisorctl stop odoo
-bin/upgrade_odoo -d odoostaging
+bin/upgrade_odoo -d odoo_prod
 bin/supervisorctl start odoo
