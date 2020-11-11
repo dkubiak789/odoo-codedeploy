@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ~/odoo || exit
+git reset --hard; git pull
+bin/buildout -c local.cfg

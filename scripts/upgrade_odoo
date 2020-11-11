@@ -1,0 +1,5 @@
+#!/bin/bash
+cd ~/odoo || exit
+bin/supervisorctl stop odoo
+bin/upgrade_odoo -d odoostaging
+bin/supervisorctl start odoo
