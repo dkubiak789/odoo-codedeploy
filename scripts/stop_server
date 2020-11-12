@@ -1,7 +1,0 @@
-#!/bin/bash
-echo "Stopping service"
-isExistApp = `pgrep apache2`
-if [[ -n  $isExistApp ]]; then
-    sudo systemctl stop apache2
-fi
-echo "Service stopped"
